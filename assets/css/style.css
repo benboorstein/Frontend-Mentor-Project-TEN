@@ -1,0 +1,118 @@
+/*
+"Be aware of the many CSS selectors available: https://www.w3schools.com/cssref/css_selectors.asp.
+That way, you can intuitively pick the right one for any context."
+*/
+
+/* For device widths: https://viewportsizer.com/devices/. */
+
+/* Remember "tab test" for accessibility. */
+
+/************************************************************
+********** For Mobile/Narrow Viewport **********
+************************************************************/
+
+/* Remember I worked with FEM's mobile demo at zoom [N/A this time]. */
+
+/* Always use this, as Brian Holt advises. It makes the size ("width", for example) of every element equal to the element's content + its padding + its border, and not inclusive of margin of course. */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    padding: ;
+}
+
+/****************************************
+header
+****************************************/
+
+/****************************************
+main
+****************************************/
+
+/****************************************
+footer
+****************************************/
+
+.attribution {
+    text-align: center;
+    font-size: 11px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); /*hsl(hue, saturation, lightness)*/
+}
+
+
+/************************************************************
+********** For Desktop/Wide Viewport **********
+************************************************************/
+  
+@media screen and (min-width: 768px) { /* starting at width of 768px, the code below (which is only for CHANGES to the above code) will take effect. */
+
+    /****************************************
+    header
+    ****************************************/
+
+    /****************************************
+    main
+    ****************************************/        
+
+    /****************************************
+    footer
+    ****************************************/
+
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+/* KEEP THIS AS A REFERENCE:
+
+parent/container/row {
+display: flex;    mandatory 
+flex-direction: ;    row (default) | row-reverse | column | column-reverse 
+justify-content: ;    flex-start (default) | flex-end | center | space-between | space-around | space-evenly 
+align-items: ;    flex-start | flex-end | center | (baseline) | stretch (default) 
+flex-wrap: ;    nowrap (default) | wrap | wrap-reverse 
+align-content: ;    flex-start | flex-end | center | space-between | space-around | stretch (default)
+
+note on 'align-content' (paraphrased from flexboxfroggy.com): 'align-content' determines the spacing between lines, while 'align-items' determines how the items as a whole are aligned within the container; when there is only one line, 'align-content' has no effect
+
+flex-flow: ;    this is shorthand for 'flex-direction: ;' and 'flex-wrap: ;' (e.g., 'flex-flow: column wrap;')
+}
+
+child/item/cell {
+align-self: ;    flex-start | flex-end | center | (baseline) | stretch (default)
+flex-grow: ;    0 is default (Jen Kramer: This is very hard to understand)
+flex-shrink: ;    1 is default (Jen Kramer: This is very hard to understand)
+flex-basis: ;    auto is default (Jen Kramer: This is basically the 'width' property--never use with Flexbox--but with some flexibility you can't control)
+order: ;    0 is default
+
+flex: [flex-grow number, flex-shrink number, flex-basis number];    this is a way (instead of using % outside of Flexbox) to set relative sizes of elements. (This is how I THOUGHT 'flex-grow' worked.) An example is 'flex: 1 1 0;' (the shorthand for which is the oft-used 'flex: 1;').
+
+margin-top: auto;    this puts the element at the bottom.
+}
+
+*/
