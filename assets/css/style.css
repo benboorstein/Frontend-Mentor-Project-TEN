@@ -25,16 +25,67 @@ html, body {
 
 body {
     font-family: 'Space Mono', monospace;
-    padding: ;
+    padding: 0 200px 0 200px;
 }
 
 /****************************************
 header
 ****************************************/
 
+.title-line-1, .title-line-2 {
+    margin: 0;
+    padding: 0;
+}
+
 /****************************************
 main
 ****************************************/
+
+.bill-form {
+    margin-top: 25px;
+}
+
+.for-dollar-sign {
+    border: 1px inset #ccc;
+}
+
+.for-dollar-sign input {
+    border: 0;
+}
+
+.select-tip-form {
+    margin-top: 25px;
+}
+
+.tip-option {
+    width: 75px;
+}
+
+.num-of-people-form {
+    margin-top: 25px;
+}
+
+#zero-not-allowed {
+    color: red;
+}
+
+.for-person-icon {
+    border: 1px inset #ccc;
+}
+
+.for-person-icon input {
+    border: 0;
+}
+
+.each-person-owes {
+    margin-top: 25px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 
 /****************************************
 footer
