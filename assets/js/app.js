@@ -89,8 +89,8 @@ numOfPeopleInput.addEventListener('input', () => {
     numOfPeopleInput.value === '0' ? zeroNotAllowed.textContent = `Can't be zero` : zeroNotAllowed.textContent = ''
 })
 
-// updating textContent of '.each-person-owes' section upon clicking out of 'numOfPeopleInput' input
-numOfPeopleInput.addEventListener('change', () => { renderWhatEachOwes() })
+// updating textContent of '.each-person-owes' section
+numOfPeopleInput.addEventListener('change', renderWhatEachOwes)
 
 // updating textContent of '.each-person-owes' section
 function renderWhatEachOwes() {
