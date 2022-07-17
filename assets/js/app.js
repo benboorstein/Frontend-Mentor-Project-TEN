@@ -86,7 +86,7 @@ function calcTip(tipAsDecimal) { tipAmount = +billInput.value * tipAsDecimal }
 
 // creating notification if user enters '0' into 'numOfPeopleInput' input
 numOfPeopleInput.addEventListener('input', () => {
-    numOfPeopleInput.value === '0' ? zeroNotAllowed.textContent = `Can't be zero` : zeroNotAllowed.textContent = ''
+    numOfPeopleInput.value === '0' || numOfPeopleInput.value === '' ? zeroNotAllowed.textContent = `Can't be zero` : zeroNotAllowed.textContent = ''
 })
 
 // updating textContent of '.each-person-owes' section
@@ -94,8 +94,8 @@ numOfPeopleInput.addEventListener('change', renderWhatEachOwes)
 
 // updating textContent of '.each-person-owes' section
 function renderWhatEachOwes() {
-    tipPerPerson.textContent = (tipAmount / +numOfPeopleInput.value).toFixed(2) // 'toFixed()' returns a string so 'toString()' not necessary
-    totalPerPerson.textContent = ((+billInput.value + tipAmount) / +numOfPeopleInput.value).toFixed(2) // 'toFixed()' returns a string so 'toString()' not necessary
+    tipPerPerson.textContent = (tipAmount / +numOfPeopleInput.value).toFixed(2) // 'toFixed()' returns a string so 'toString()' is not necessary
+    totalPerPerson.textContent = ((+billInput.value + tipAmount) / +numOfPeopleInput.value).toFixed(2)
 }
 
 // resetting values on click of 'resetBtn'

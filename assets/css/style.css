@@ -13,6 +13,10 @@ That way, you can intuitively pick the right one for any context."
 
 /* Remember I worked with FEM's mobile demo at zoom [N/A this time]. */
 
+/********************
+NOTE: Because I wasn't taking the CSS seriously for this project (the point was mainly to work on the JS), I basically put what I'd put in the desktop viewport in the mobile viewport instead. Just be aware of that in case I come back to this project and try to do the CSS for real.
+********************/
+
 /* Always use this, as Brian Holt advises. It makes the size ("width", for example) of every element equal to the element's content + its padding + its border, and not inclusive of margin of course. */
 * {
     box-sizing: border-box;
